@@ -95,3 +95,36 @@ let newsfeed = [
     timeline: "awesome"
   }
 ];
+
+// Exercise: Build Facebook
+
+var database1 = [
+  {
+    username: "andrei",
+    password: "supersecret"
+  }
+];
+
+var newsFeed1 = [
+  {
+    username: "Bobby",
+    timeline: "Learning is fun!"
+  },
+  {
+    username: "Sally",
+    timeline: "Javascript is so cool!"
+  }
+];
+
+const userNamePrompt = prompt("What's your username?");
+const passwordPrompt = prompt("What's your password?");
+
+function signIn(user, pass) {
+  if (user === database1[0].username && pass === database1[0].password) {
+    console.log(newsFeed1);
+  } else {
+    alert("Sorry, wrong username and password");
+  }
+}
+
+signIn(userNamePrompt, passwordPrompt);
